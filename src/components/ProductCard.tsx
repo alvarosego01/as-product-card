@@ -7,7 +7,9 @@ import { InitialValues_I, ProductCardHandlers_I, ProductContextProps_I, Product_
 import styles from "../styles/styles.module.css";
 
 
-export const ProductContext = createContext({} as ProductContextProps_I)
+export const ProductContext = createContext({
+
+} as ProductContextProps_I)
 const { Provider } = ProductContext;
 
 

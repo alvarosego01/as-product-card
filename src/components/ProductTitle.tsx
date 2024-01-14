@@ -12,9 +12,9 @@ export interface ProductTitleProps_I {
 
 export const ProductTitle = ({ title = '', className}: ProductTitleProps_I) => {
 
-    const { title: prodTitle } = useContext(ProductContext).product;
+    const { title: prodTitle } = useContext(ProductContext).product || {};
 
-    if(!title) title = prodTitle;
+    if(prodTitle) title = prodTitle;
 
     return (
         <span className={`${ styles.productDescription } ${className}`}>
